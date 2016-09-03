@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet" type= "text/css" href= "o100CSS1.css">
+<script>
+	function frickinClock() {
+		var now = new Date();
+		var hours = now.getHours();
+		var minutes = now.getMinutes();
+		var seconds = now.getSeconds();
+		
+		if (hours > 12) 
+		{
+			hours -= 12;
+			}
+			else if (hours === 0) 
+				{
+					hours = 12;
+					}
+			
+				
+		var clock = hours + "." + minutes + "." + seconds;
+		
+		document.getElementById('godDamnClockJawn').innerHTML =
+		hours + "." + minutes + "." + seconds;
+		
+		var fuckinTimeout = setTimeout(frickinClock, 1000);
+		
+	}
+	
+	
+	
+</script>
+
+<title>.100</title>
+
+
+
+
+</head>
+<body onload = "frickinClock()">
+
+
+	<h1>.100</h1>
+		<h3 id = "godDamnClockJawn"></h3>
+		<h2>
+		<form> <input type ="button" value="Review" onClick ="o100Review.html"/> </form><br>
+		<form> <input type = "button" value = "News"/></form><br> 
+		<form><input type ="button" value = "Hotlist"/></form><br> 
+		<form> <input type = "button" value = "Notlist"/> </form>
+		
+		
+		</h2>
+		
+		
+	<p> </p>
+	<p> </p>
+	<p>
+		<ul>
+			<li></li>
+		</ul>
+	</p>
+
+
+
+</body>
+
+</html>
